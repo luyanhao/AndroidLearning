@@ -10,6 +10,7 @@
 
 //triangle
 #include "learnopengl_assigns/triangle/RenderTriangle.h"
+#include "learnopengl_assigns/triangle/RenderTriangleFAN.h"
 #include "learnopengl_assigns/triangle/RenderTriangleVBO.h"
 #include "learnopengl_assigns/triangle/RenderTriangleVAO.h"
 #include "learnopengl_assigns/triangle/RenderRect.h"

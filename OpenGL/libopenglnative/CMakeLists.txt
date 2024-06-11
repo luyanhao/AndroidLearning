@@ -40,6 +40,7 @@ add_library(openglnative SHARED
 
         # learnopengl triangle demo
         ${PATH_TO_CODE_CORE}/learnopengl_assigns/triangle/RenderTriangle.cpp
+        ${PATH_TO_CODE_CORE}/learnopengl_assigns/triangle/RenderTriangleFAN.cpp
         ${PATH_TO_CODE_CORE}/learnopengl_assigns/triangle/RenderTriangleVBO.cpp
         ${PATH_TO_CODE_CORE}/learnopengl_assigns/triangle/RenderTriangleVAO.cpp
         ${PATH_TO_CODE_CORE}/learnopengl_assigns/triangle/RenderRect.cpp

@@ -3,6 +3,7 @@ package com.scott.nativecode;
 public class IType {
     public static class AssignType {
         //triangle
+        public static final int ASSIGN_LEARN_OPENGL_TRIANGLE_FAN_SIMPLE = 1000;
         public static final int ASSIGN_LEARN_OPENGL_TRIANGLE_SIMPLE = 1001;
         public static final int ASSIGN_LEARN_OPENGL_TRIANGLE_SIMPLE_VBO = 1002;
         public static final int ASSIGN_LEARN_OPENGL_TRIANGLE_SIMPLE_VAO = 1003;

@@ -44,6 +44,11 @@ void AssignFactory::createAssignDemoV2(JNIEnv *env, jobject asset_manager, int t
         this->p_AssignDemo->onInit(env,asset_manager,"hello_triangle_vertex_shader.glsl","hello_triangle_fragment_shader.glsl");
         return;
     }
+    if(type == ASSIGN_LEARN_OPENGL_TRIANGLE_FAN_SIMPLE){
+        this->p_AssignDemo = new RenderTriangleFAN();
+        this->p_AssignDemo->onInit(env,asset_manager,"hello_triangle_vertex_shader.glsl","hello_triangle_fragment_shader.glsl");
+        return;
+    }
 
 
     if (type == ASSIGN_LEARN_OPENGL_SHADER_SIMPLE_SHADER) {
