@@ -78,8 +78,8 @@ void TextureDemo::onDraw() {
     LOGD(TAG_TEXTURE_DEMO,"onDraw start");
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(this->m_ProgramObj);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture);
+//    glActiveTexture(GL_TEXTURE0);
+//    glBindTexture(GL_TEXTURE_2D, texture);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, textureId1);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
@@ -100,7 +100,7 @@ void TextureDemo::onInit(JNIEnv *env, jobject asset_manager, const string &verte
         LOGD(TAG_TEXTURE_DEMO,"loadImageToMemory failure");
     }
 
-    this->textureMemoryData1 = AssetFun::loadImageToMemory("textures/texture_awesomeface.png", pManager,
+    this->textureMemoryData1 = AssetFun::loadImageToMemory("textures/pexels_jess_vide_4321085.png", pManager,
                                                           &textureMemoryDataLen1);
     if (textureMemoryData1){
         LOGD(TAG_TEXTURE_DEMO,"loadImageToMemory succ len = %d",textureMemoryDataLen1);
